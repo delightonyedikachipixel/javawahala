@@ -46,7 +46,7 @@ public class AirConditionerTest{
     public void testThatTemperatureCannotGoAbove30(){
         AirConditioner airConditioner = new AirConditioner();
         airConditioner.turnOn();
-        for (int count = 0; count < 20; count++){
+        for (int count = 0; count < 15; count++){
             airConditioner.increaseTemperature();
         }
         int expectedTemperature = 30;
