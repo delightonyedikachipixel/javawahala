@@ -1,0 +1,19 @@
+public class PrimeNumbers {
+    public static void main(String[] args) {
+
+        for (int num = 2; num <= 100; num++) {
+            boolean isPrime = true;  
+
+            for (int count = 2; count < num; count++) {
+                if (num % count == 0) {  
+                    isPrime = false;     
+                    break;               
+                }
+            }
+
+            if (isPrime) {                
+                System.out.print(num + " ");
+            }
+        }
+    }
+}
